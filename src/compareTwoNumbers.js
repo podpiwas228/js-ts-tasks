@@ -11,7 +11,6 @@ module.exports.compareTwoNumbers = function compareTwoNumbers(firstNumber, secon
     return '>';
   }
   if (firstNumber === secondNumber) {
-    // Исправлено: оператор равенства
     return '=';
   }
   if (firstNumber < secondNumber) {
