@@ -8,7 +8,7 @@
     "expected": 458
   },
   {
-    "fnArguments": ["    -5    ", "   -    10"],
+    "fnArguments": ["    -5    ", "   -10"],
     "expected": -15
   },
   {

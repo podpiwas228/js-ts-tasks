@@ -1,3 +1,4 @@
+8;
 /**
  * Find a sum of two numbers
  * @param {number|string} firstNumber
@@ -5,5 +6,7 @@
  * @returns {number}
  */
 module.exports.sumTwoNumbers = function sumTwoNumbers(firstNumber, secondNumber) {
-  throw new Error('Not implemented');
+  const num1 = parseFloat(firstNumber);
+  const num2 = parseFloat(secondNumber);
+  return num1 + num2;
 };
