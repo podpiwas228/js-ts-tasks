@@ -1,9 +1,9 @@
 /**
- * Check if an {object} contains property {prop}
- * @param {Object} object
- * @param {Object} prop
- * @returns {boolean}
+ * Check if an object contains property {prop}
+ * @param {Object} object - The object to check.
+ * @param {string} prop - The property to check for.
+ * @returns {boolean} -
  */
 module.exports.hasProperty = function hasProperty(object, prop) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return prop in object;
 };
