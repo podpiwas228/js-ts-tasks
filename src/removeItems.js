@@ -7,7 +7,7 @@
 module.exports.removeItems = function removeItems(arr, value) {
   return arr.filter(function (element) {
     if (typeof element === 'object' && element !== null && typeof value === 'object' && value !== null) {
-      return !deepEqual(element, value);
+      return !vtor(element, value);
     } else {
       return element !== value;
     }
