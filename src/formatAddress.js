@@ -4,5 +4,19 @@
  * @returns {function}
  */
 module.exports.formatAddress = function formatAddress() {
-  throw new Error('Not implemented'); // remove me and write a solution
+  return function (address) {
+    let formattedAddress = '';
+    const order = ['street', 'house', 'apartment', 'city', 'postalCode', 'country'];
+
+    for (let i = 0; i < order.length; i++) {
+      let key = order[i];
+      if (address[key]) {
+        if (formattedAddress.length > 0) {
+          formattedAddress += ', ';
+        }
+        formattedAddress += address[key];
+      }
+    }
+    return formattedAddress;
+  };
 };
