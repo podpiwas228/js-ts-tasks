@@ -1,7 +1,7 @@
-const chai = require('chai');
-const sinon = require('sinon');
+import chai from 'chai';
+import sinon from 'sinon';
 
-const { mockApi } = require('../src/mockApi');
+import { mockApi } from '../src/mockApi.js';
 
 const { expect, assert } = chai;
 const RESPONSE = {

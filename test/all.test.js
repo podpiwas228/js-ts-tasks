@@ -1,8 +1,7 @@
-const chai = require('chai');
-const { inspect } = require('util');
-const chaiAsPromised = require('chai-as-promised');
-
-const { all } = require('../src/all');
+import chai from 'chai';
+import { inspect } from 'util';
+import chaiAsPromised from 'chai-as-promised';
+import { all } from '../src/all.js';
 
 chai.use(chaiAsPromised);
 
