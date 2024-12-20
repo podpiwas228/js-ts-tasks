@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Tasks for EHU JS/TS Program",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "prepare": "husky install ./.husky",
     "test": "npm run test:junit",
@@ -19,7 +20,8 @@
     "lint": "eslint -c .eslintrc src/*.js",
     "lint:fix": "eslint -c .eslintrc src/*.js --fix",
     "prettier": "prettier --check . --ignore-unknown --ignore-path ./config/.prettierignore",
-    "prettier:fix": "prettier --write . --ignore-unknown --ignore-path ./config/.prettierignore"
+    "prettier:fix": "prettier --write . --ignore-unknown --ignore-path ./config/.prettierignore",
+    "commitlint": "commitlint --config ./config/commitlint.config.cjs"
   },
   "repository": {
     "type": "git",
