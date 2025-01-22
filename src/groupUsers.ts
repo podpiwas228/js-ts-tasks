@@ -2,7 +2,7 @@ interface User {
   name: string;
   login: string;
   type: 'EMPLOYEE' | 'CONTRACTOR';
-  [key: string]: any;  // Позволяет добавлять любые другие свойства
+  [key: string]: any;  
 }
 
 interface GroupedUsers {

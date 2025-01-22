@@ -15,43 +15,38 @@ module.exports.converter = function (value: number | string, from: string, to: s
   }
 
   const conversions: { [key: string]: { [key: string]: (v: number) => number } } = {
-    // Distance conversions
     m: {
-      mi: (v) => v * 0.000621371, // meters to miles
-      m: (v) => v,                // meters to meters (identity)
+      mi: (v) => v * 0.000621371, 
+      m: (v) => v,                
     },
     mi: {
-      m: (v) => v / 0.000621371, // miles to meters
-      mi: (v) => v,              // miles to miles (identity)
+      m: (v) => v / 0.000621371, 
+      mi: (v) => v,              
     },
 
-    // Weight conversions
     gr: {
-      pound: (v) => v * 0.00220462, // grams to pounds
-      gr: (v) => v,                 // grams to grams (identity)
+      pound: (v) => v * 0.00220462, 
+      gr: (v) => v,                 
     },
     pound: {
-      gr: (v) => v / 0.00220462,    // pounds to grams
-      pound: (v) => v,              // pounds to pounds (identity)
+      gr: (v) => v / 0.00220462,   
+      pound: (v) => v,              
     },
-
-    // Temperature conversions
     C: {
-      K: (v) => v + 273.15,         // Celsius to Kelvin
-      C: (v) => v,                  // Celsius to Celsius (identity)
+      K: (v) => v + 273.15,         
+      C: (v) => v,                  
     },
     K: {
-      C: (v) => v - 273.15,         // Kelvin to Celsius
-      K: (v) => v,                  // Kelvin to Kelvin (identity)
+      C: (v) => v - 273.15,         
+      K: (v) => v,                  
     },
   };
 
-  // Check if conversion from 'from' to 'to' is supported
+
   if (!conversions[from] || !conversions[from][to]) {
     throw new Error(`Conversion from '${from}' to '${to}' is not supported.`);
   }
 
-  // Perform the conversion
   const result = conversions[from][to](value);
   return Math.round(result * 100) / 100;
 };
