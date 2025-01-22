@@ -131,7 +131,6 @@ customElements.define(
          overflow: hidden;
         }
     </style>
-
     <div class="iphone-x">
         <i>Speaker</i>
         <b>Camera</b>
