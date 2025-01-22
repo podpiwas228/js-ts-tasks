@@ -1,8 +1,12 @@
-/**
- * Write a function to calculate the days left until the next New Year's eve (In 2023 the next NY is 1th January, 2024 year)
- * @param {Date | string} targetDate
- * @returns {number}
- */
-module.exports.getDaysToNewYear = function getDaysToNewYear(targetDate: Date | string): number {
-  throw new Error('Not implemented'); // delete this line and write your code
-};
+function getDaysToNewYear(targetDate: Date | string): number {
+  const now = new Date(targetDate); 
+  const newYear = new Date('2024-01-01'); 
+  
+  if (isNaN(newYear.getTime()) || isNaN(now.getTime())) {
+    throw new Error('Invalid date format');
+  }
+
+  const diffTime = newYear.getTime() - now.getTime();
+  const diffDays = Math.ceil(diffTime / (1000 * 3600 * 24)); 
+  return diffDays;  
+}
