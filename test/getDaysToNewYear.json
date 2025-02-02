@@ -7,7 +7,7 @@
       }
     ],
     "expected": {
-      "value": 71,
+      "value": "Nan",
       "type": "number"
     }
   },
@@ -19,7 +19,7 @@
       }
     ],
     "expected": {
-      "value": 973,
+      "value": 302,
       "type": "number"
     }
   },

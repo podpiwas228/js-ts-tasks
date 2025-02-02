@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet (Dark Theme)</title>
+    <style>
+        body {
+            background-color: #141D26;
+            color: #c9d1d9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .tweet-container {
+            background-color: #161b22;
+            padding: 20px;
+            border-radius: 15px;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .profile-name {
+            font-weight: bold;
+        }
+
+        .username {
+            color: #8b949e;
+        }
+
+        .tweet-content {
+            margin: 10px 0;
+        }
+
+        .hashtags {
+            color: #1f6feb;
+        }
+
+        .tweet-footer {
+            display: flex;
+            align-items: center;
+            color: #8b949e;
+            font-size: 14px;
+        }
+
+        .tweet-footer span {
+            margin-right: 15px;
+        }
+
+        .like-icon::before {
+            content: '\2665';
+            color: #8b949e;
+            margin-right: 5px;
+        }
+
+        .twitter-icon::before {
+            content: '\1F426';
+            color: #1f6feb;
+            font-size: 18px;
+            margin-left: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="tweet-container">
+        <div class="profile">
+            <img src="https://via.placeholder.com/40" alt="Profile Picture">
+            <div>
+                <div class="profile-name">John Doe</div>
+                <div class="username">@realjohndoe</div>
+            </div>
+            <div class="twitter-icon"></div>
+        </div>
+
+        <div class="tweet-content">
+            Why do they call it 'debugging' when it feels more like 'wildly guessing and hoping for the best'? <span class="hashtags">#programming #coding #debugging</span>
+        </div>
+
+        <div class="tweet-footer">
+            <span class="like-icon">650</span>
+            <span>3:40 PM — Feb 24, 2022</span>
+        </div>
+    </div>
+</body>
+</html>
