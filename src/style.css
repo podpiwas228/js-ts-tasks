@@ -1,134 +1,149 @@
-/* your css code here  */
-
 body {
   background: linear-gradient(45deg, #FFD6C3, #FCB5FF, #BEC6FF);
-}
-txtu 
-{
-position: absolute;
-margin-left:120.31px;
-color: white;
-font-size: 1.4em ;
+    margin: 0;
+    padding: 0;
+    height: 100%
 }
 .container {
-  padding-top: 55.03px;
-  padding-left: 18.35px;
-  padding-right: 18.35px;
+  display:flex;
+  width: 393px;
+padding-top: 15px;
+margin-top: 24px;
+  justify-content: space-between;
 }
-
-#image {
+t1 {
+  position: relative;
+  color:#FFFFFF;
+  padding-left: 145px;
+  bottom: 0px;
+  top: 10px;
+  font-size: 1.2em ;
+}
+svg {
+  position:absolute;
   font-size : 0.5em;;
-  margin-bottom : 10px;;
-}
-
-#image2 {
-  margin-left: 260px;
-  margin-bottom:20px ;
-}
-.container1 {
-  margin-bottom: 10px;
-}
-span {
-position: absolute;
-margin-left:139.31px;
-color: white;
-font-size: 1em ;
-margin-top :18px ;
-}
-num {
-  position: absolute; 
-  margin-left:145.31px;
-  margin-top: 2px;
-  color :white;
-}
-num1 {
-  position: absolute; 
-  margin-left:200.31px;
-  margin-top: 2px;
-  color :white;
-}
-span1 {
-  position: absolute;
-  margin-left:192.31px;
-  color: white;
-  font-size: 1em ;
-  margin-top :18px ; 
-}
-num2 {
-  position: absolute; 
-  margin-left:280.31px;
-  margin-top: 2px;
-  color :white;
-}
-span2 {
-  position: absolute;
-  margin-left:270.31px;
-  color: white;
-  font-size: 1em ;
-  margin-top : 18px; 
-}
-#image3 {
-  background-color: black;
-  padding-left: 20px;
-  padding-top: 15px;
-}
-bb {
-  color:white;
-  padding-left: 20px ;
-  position: absolute;
-}
-bb1 {
-  color:gray;
-  padding-left: 20px ;
-  padding-top: 15px;
-  position: absolute;
-  font-size: 0.9em;
-}
-bb2 {
-  position: absolute;
-  color:rgba(255, 255, 255, 0.744);
-  padding-left: 20px ;
-  padding-top: 28px;
-}
-#image4 {
-  width:27%;
-  padding-top: 60px ;
-  padding-left: 18px;
-}
-#image5 {
-  width:27%;
-  padding-top: 60px;
-  padding-left: 0px;
-}
-#image6 {
-  width:27%;
-  margin-top: 60px;
-padding-left: 0px;
-}
-#image7 {
-  width: 10% ;
-  margin-top: 60px;
-padding-left: 0px;
-}
-#image8 {
-  width: 85%;
-  padding-left: 20px;
-  padding-top: 8px;
-}
-#image9{
-  width: 100%;
+  padding-left: 3px;
   padding-top: 10px;
 }
-#image10 {
-  width : 100%;
-}
-#image11{
+#Svg1 {
   position: absolute;
-  width: 100%;
-  padding-top: 240px;
-  top : 36;
-  left: 0;
-  bottom: 10;
-  color:grey;
+  padding-left: 335px;
+  margin-top: 12px;
 }
+#Svg2 {
+ padding-top: 30px;
+}
+t2 {
+  position:absolute;
+  padding-left: 140px;
+  color: #FFFFFF;
+  margin-top: 75px;
+  
+}
+t3 {
+  position:absolute;
+  padding-left: 190px;
+  color: #FFFFFF;
+  margin-top: 75px;
+}
+t4 {
+  position:absolute;
+  padding-left: 270px;
+  color: #FFFFFF;
+  margin-top: 75px;
+}
+num {
+  position:absolute;
+  padding-left: 145px;
+  color: #FFFFFF;
+  margin-top: 58px; 
+}
+num1 {
+  position:absolute;
+  padding-left: 205px;
+  color: #FFFFFF;
+  margin-top: 58px;
+}
+num2 {
+  position:absolute;
+  padding-left: 290px;
+  color: #FFFFFF;
+  margin-top: 58px;
+}
+span {
+  position:absolute;
+  color:#FFFFFF;
+  padding-top: 140px;
+  padding-left: 20.35px;
+}
+span1 {
+  position:absolute;
+  color:#8E8E8E;
+  padding-top: 157px;
+  padding-left: 20.35px;
+  font-size: small;
+}
+span2 {
+  position:absolute;
+  color:#D4E0ED;
+  padding-top: 170px;
+  padding-left: 20.35px;
+  font-size: small;
+}
+#Svg3{
+  position: relative;
+  padding-top: 200px;
+  width: 27%;
+}
+#Svg4{
+  position: relative;
+  padding-top: 200px;
+  width: 27%;
+  padding-left: 3px;
+}
+#Svg5 {
+  position: relative;
+  padding-top: 200px;
+  width: 27%;
+  padding-left: 3px; 
+}
+#Svg6 {
+  position: absolute;
+  width: 9%;
+  padding-top: 200px;
+  padding-left: 3px;
+}
+#Svg7 {
+  position: relative;
+}
+#Svg8 {
+  position: relative;
+}
+#Svg9 {
+  position: relative;
+}
+#Svg9 {
+  position: relative;
+}
+#Svg10 {
+  position: relative;
+}
+#Svg11 {
+  position: relative;
+}
+#Svg12 {
+  position: relative;
+}
+#tab {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+ margin-top: 15px;
+  width: 100%;
+  height: 90px;
+  border-radius: 30px;
+}
+
+
+
 
